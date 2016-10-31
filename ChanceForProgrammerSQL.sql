@@ -55,7 +55,7 @@ WHERE EmployeeId IN (3,4)
 SELECT e.Name, d.DepartmentName
 FROM Employee AS e
 INNER JOIN Department AS d 
-ON e.EmployeeId = d.DepartmentId
+ON e.DepartmentId = d.DepartmentId
 
 -- Show EmployeeId and Name where name start with 'J' letter sorted by column Name in descending order
 SELECT EmployeeId, Name
