@@ -20,7 +20,10 @@ public static void main(String[] args) {
 		    
 		    int firstElementArg = Integer.valueOf(args[0]).intValue();
 		    //print the sum and first element args[0]
-	            System.out.println(firstElementArg + "" + sum);
+	            System.out.println("The first element of the array is " 
+	            		+ firstElementArg + 
+	            		" and the sum of all elements, except first one," 
+	            		+ "in the array is " + sum);
 
 	        }
 	}
