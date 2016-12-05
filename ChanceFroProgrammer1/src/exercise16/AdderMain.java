@@ -8,6 +8,8 @@ public class AdderMain {
  		String[] numbers = {"1", "2", "3"};
 		Adder.main(numbers);
 		
+		System.out.println();
+		
 		String[] numbers1 = {"1"};
 		Adder.main(numbers1);
 

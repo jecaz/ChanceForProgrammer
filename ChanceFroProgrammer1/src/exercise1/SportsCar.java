@@ -1,7 +1,9 @@
 package exercise1;
 
-// SportsCar extends superclass Vehicle and inherited all instances variables from Vehicle 
-//and methods which have to override
+/* SportsCar extends superclass Vehicle and inherits all instance variables 
+ * from Vehicle and methods which have to override. SportsCar also implements 
+ * interface VehicleBehavior and provides an implementation for his methods.
+ */
 
 public class SportsCar extends Vehicle implements VehicleBehavior {
 	

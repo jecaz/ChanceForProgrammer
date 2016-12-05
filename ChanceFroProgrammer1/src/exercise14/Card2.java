@@ -126,7 +126,7 @@ public class Card2 {
 		
 		Card2 card1 = new Card2(ACE, DIAMONDS);
 		Card2 card2 = new Card2(KING, SPADES);
-		Card2 card3 = new Card2(ACE, DIAMONDS);
+		Object card3 = new Card2(ACE, DIAMONDS);
 		
 		
 		System.out.println(card1);

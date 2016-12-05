@@ -1,8 +1,7 @@
 package exercise10;
 
-
-//Rewrite the class Card from the exercise6 so that it represents the rank and 
-//suit of a card with enum types.
+// Rewrite the class Card from the exercise6 so that it represents the rank and 
+// suit of a card with enum types.
 
 public class Card3 {
 	

@@ -20,12 +20,14 @@ public class FPAdder {
 				// valueOf() method -> sum += Double.parseDouble(args[i]);
 			}
 			
+			System.out.println("Sum is: " + sum);
+			
 			// Format the sum
 			DecimalFormat myFormatter = new DecimalFormat("###,###.##");
 			String output = myFormatter.format(sum);
 			
 			// print the sum
-			System.out.println(output);
+			System.out.println("Formated sum: " + output);
 		}
 	}
 }

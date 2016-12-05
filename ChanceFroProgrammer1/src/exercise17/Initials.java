@@ -8,7 +8,7 @@ public class Initials {
 		
 		String myName = "Jelena";
 		String mySurname = "Zobenica";
-		String myNameAndSurname = new String(myName+mySurname);
+		String myNameAndSurname = new String(myName + mySurname);
 		
 		
 		for(int i = 0; i< myName.concat(mySurname).length(); i++){
@@ -17,7 +17,7 @@ public class Initials {
 				System.out.println("My initials are: " + myName.charAt(i) 
 				+ mySurname.charAt(i));
 				break;
-		}
+			}
 		}
 		System.out.println("\nAnother way \n");
 		
@@ -30,7 +30,7 @@ public class Initials {
         }
     }
     
-    System.out.println("My initials are: " + myInitials.toString().toLowerCase());
+    System.out.println("My initials are: " + myInitials.toString());
 		
 	}
 

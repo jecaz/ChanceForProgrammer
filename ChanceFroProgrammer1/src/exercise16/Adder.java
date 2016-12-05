@@ -13,8 +13,8 @@ public static void main(String[] args) {
 		    int sum = 0;
 		    
 		    for (int i = 1; i < numArgs; i++) {
-		    		// return string arguments from command line first in Integer wrapper class,
-		    		// than convert it in primitive int value
+		    		// return string arguments from command line first in 
+		    	    // Integer wrapper class, than convert it in primitive int value
 	                sum += Integer.valueOf(args[i]).intValue();
 		    }
 		    
@@ -22,7 +22,7 @@ public static void main(String[] args) {
 		    //print the sum and first element args[0]
 	            System.out.println("The first element of the array is " 
 	            		+ firstElementArg + 
-	            		" and the sum of all elements, except first one," 
+	            		" and the sum of all elements,\nexcept first one," 
 	            		+ "in the array is " + sum);
 
 	        }

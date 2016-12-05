@@ -1,7 +1,9 @@
 package exercise9;
 
-
 public class Class1 {
+	
+	// Declare outer class variable
+	private int numberOfStatement = 0;
 	
 	// Declare variable of inner class
 	protected InnerClass1 ic;
@@ -21,15 +23,17 @@ public class Class1 {
     	
     	// Create two inner class methods returning string representation
         public String getString() {
-            return "InnerClass1: getString invoked";
+        	numberOfStatement = 1;
+            return numberOfStatement + ". InnerClass1: getString invoked";
         }
      
         public String getAnotherString() {
-            return "InnerClass1: getAnotherString invoked";
+        	numberOfStatement = 2;
+            return numberOfStatement + ". InnerClass1: getAnotherString invoked";
         }
     }
     
-static public void main(String[] args) {
+    public static void main(String[] args) {
 		
 		// Create instance from outer class Class1
         Class1 c1 = new Class1();
@@ -47,9 +51,8 @@ static public void main(String[] args) {
 			 
      		The method displayStrings() is invoked on the reference of the outer class
      		Class1 (c1). This method invoked two other from inner class InnerClass1, 
-     		getString() and getAnotherString(). These two are applied on ic reference of
-     		InnerClass1 which is created by constructor of outer class.
-     
+     		getString() and getAnotherString(). These two are applied on ic reference 
+     		of InnerClass1 which is created by constructor of outer class.
      */
     
 

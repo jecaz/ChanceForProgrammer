@@ -1,7 +1,5 @@
 package exercise12;
 
-
-
 // CharSequenceDemo presents a String value -- backwards.
 
 public class CharSequenceDemo implements CharSequence {
@@ -12,11 +10,12 @@ public class CharSequenceDemo implements CharSequence {
 		this.s = s;
 	}
 
-	//If the string is backwards, the end is the beginning!
+	// If the string is backwards, the end is the beginning
 	private int fromEnd(int i) {
 		return s.length() - 1 - i;
 	}
-	// Override charAt, subSequence, length and toString method from interface CharSequence 
+	// Override charAt, subSequence, length and toString method from interface 
+	// CharSequence 
 	@Override
 	public char charAt(int i) {
 		if ((i < 0) || (i >= s.length())) {
@@ -28,9 +27,9 @@ public class CharSequenceDemo implements CharSequence {
 	public int length() {
 		return s.length();
 	}
-	/* If start less then 0 or greater then end, and end is greater then sting s length
-	   method will throw an exception. Otherwise it will build object of StringBuilder and 
-	   present it in the reverse order
+	/* If start is less then 0 or greater then end, and end is greater then sting 
+	   s length method will throw an exception. Otherwise it will build object of 
+	   StringBuilder and present it in the reverse order.
 	*/
 	public CharSequence subSequence(int start, int end) {
 		if (start < 0) {
@@ -61,7 +60,8 @@ public class CharSequenceDemo implements CharSequence {
 		CharSequenceDemo s =
 				new CharSequenceDemo("Write a class that implements the CharSequence " 
 									+"interface found in the java.lang package.");
-   	//System.out.println(s.length());
+   	System.out.println(s.length());
+		
    //exercise charAt() and length()
    for (int i = 0; i < s.length(); i++) {
        System.out.print(s.charAt(i));
@@ -71,6 +71,7 @@ public class CharSequenceDemo implements CharSequence {
 
    //exercise subSequence() and length();
    int start = random(s.length() - 1);
+   System.out.println(start);
    int end = random(s.length() - 1 - start) + start;
    System.out.println(s.subSequence(start, end));
 

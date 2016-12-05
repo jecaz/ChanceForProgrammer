@@ -11,6 +11,7 @@ public class StringConcatenate {
 		String mom = "mom.";
 		
 		// first way using StringBuilder class 
+		System.out.println("First way using StringBuilder class: ");
 		StringBuilder sb = new StringBuilder(hi);
 		
 		System.out.println("Implementation of append method: " + sb.append(mom));
@@ -27,9 +28,11 @@ public class StringConcatenate {
 		System.out.println(sb.toString() + "\n");
 	
 		// second way using String method concat()
+		System.out.println("Second way using String method concat(): ");
 		System.out.println(hi.concat(mom) + "\n");
 		
 		// third way with + operator
+		System.out.println("Third way with + operator: ");
 		System.out.println(hi + mom);
 
 	}

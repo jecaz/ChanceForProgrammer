@@ -30,9 +30,10 @@ public class Algorithm {
 
     T maxElem = list.get(begin);
 
-    for (++begin; begin < end; ++begin)
+    for (++begin; begin <= end; ++begin)
         if (maxElem.compareTo(list.get(begin)) < 0)
             maxElem = list.get(begin);
+         
     return maxElem;
-}
+	}
 }

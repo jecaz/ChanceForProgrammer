@@ -5,8 +5,7 @@ import java.util.*;
 public class Anagram {
 	
 	// Check if two string parameters are anagrams
-    public static boolean areAnagrams(String string1,
-                                      String string2) {
+    public static boolean areAnagrams(String string1, String string2) {
 
         String workingCopy1 = removeJunk(string1);
         String workingCopy2 = removeJunk(string2);
@@ -16,13 +15,15 @@ public class Anagram {
 
 	    workingCopy1 = sort(workingCopy1);
 	    workingCopy2 = sort(workingCopy2);
+	    
 	    // Just to check what sort do
-	    System.out.println(workingCopy1 + "\t" + workingCopy2 + "\n");
+	    // System.out.println(workingCopy1 + "\t" + workingCopy2 + "\n");
 	    
         return workingCopy1.equals(workingCopy2);
     }
-    // remove anything from added string parameter that is not a char element and put it in object of
-    // StringBuilder class
+    
+    // remove anything from added string parameter that is not a char element 
+    // and put it in object of StringBuilder class
     protected static String removeJunk(String string) {
         int i, len = string.length();
         StringBuilder dest = new StringBuilder(len);
@@ -37,6 +38,7 @@ public class Anagram {
 
         return dest.toString();
     }
+    
     // First convert string into char array, sort it and back it in string
     protected static String sort(String string) {
 	    char[] charArray = string.toCharArray();
@@ -47,6 +49,7 @@ public class Anagram {
     }
 
     public static void main(String[] args) {
+    	
         String string1 = "Cosmo and Laine:";
         String string2 = "Maid, clean soon!";
 

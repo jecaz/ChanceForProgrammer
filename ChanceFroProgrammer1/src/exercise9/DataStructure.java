@@ -5,8 +5,8 @@ import java.util.function.Function;
 
 public class DataStructure {
 
-    private final static int SIZE = 15;
-    private int[] arrayOfInts = new int[SIZE];
+    private final static int SIZE = 15; // variable which is used to set size of an array 
+    private int[] arrayOfInts = new int[SIZE]; // instantiate an array of integer numbers
     
     // Assign values to each element of the array through constructor
     public DataStructure() {
@@ -18,7 +18,7 @@ public class DataStructure {
     public int size() {
         return SIZE;
     }
-    // return element of the array with given index
+    // return element of an array with given index
     public int get(int index) {
         return arrayOfInts[index];        
     }
@@ -30,11 +30,13 @@ public class DataStructure {
     private class EvenIterator implements DataStructureIterator {
         
         private int nextIndex = 0;
+        
         // Override hasNext and next methods from interface Iterator
         @Override
         public boolean hasNext() {
             return (nextIndex <= SIZE - 1);
         }        
+        
         @Override
         public Integer next() {
             Integer retValue = Integer.valueOf(arrayOfInts[nextIndex]);
@@ -49,8 +51,9 @@ public class DataStructure {
         return new EvenIterator();
     }
     
-    // I invoke method getEvenIterator() and assigned it to a reference iterator of type
-    // DataStructureIterator-interface (which is a member of outer class DataStructure) 
+    // I invoke method getEvenIterator() and assigned it to a reference iterator 
+    // of type DataStructureIterator-interface (which is a member of outer class 
+    // DataStructure) 
     public void printEven() {
         DataStructureIterator iterator = getEvenIterator();
         while (iterator.hasNext()) {
@@ -58,9 +61,9 @@ public class DataStructure {
         }
         System.out.println();
     }
-    /* print method  will be invoked with an instance of the class EvenIterator.
-       Also this method will use an anonymous class as the method's
-       argument instead of the parameter of type DataStructureIterator.
+    /* print method  will be invoked with an instance of the class EvenIterator as a 
+       parameter. Also this method will use an anonymous class as the method's
+       argument in place of the parameter of type DataStructureIterator.
      */
     public void print(DataStructureIterator iterator) {
         while (iterator.hasNext()) {
@@ -68,8 +71,8 @@ public class DataStructure {
         }
         System.out.println();
     }
-    // print method for using lambda expressions. For parameter use functional interface Function,
-    // and implement its method apply 
+    // print method for using lambda expressions. For parameter this method uses 
+    // functional interface Function, and implements his method apply 
     public void print(Function<Integer, Boolean> function) {
         for (int i = 0; i < SIZE; i++) {
             if (function.apply(i)) {
@@ -90,7 +93,7 @@ public class DataStructure {
         return Boolean.TRUE;
     }
 
-    public static void main(String [] args) {
+ public static void main(String [] args) {
         
         DataStructure ds = new DataStructure();
         
