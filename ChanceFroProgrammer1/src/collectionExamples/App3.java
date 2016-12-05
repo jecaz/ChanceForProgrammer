@@ -5,7 +5,8 @@ import java.util.*;
 public class App3 {
 	
 	// Every element from array vehicles should be connected with rows in drivers array. 
-	// For exampe, ambulance drivers are: Fred, Sue and Peter, and so on..
+	// For example, ambulance drivers are: Fred, Sue and Peter, helicopter drivers are:
+	// Sue, Richard, Bob and Fred, and so on..
 	public static String[] vehicles = {
 			"ambulance", "helicopter", "lifeboat"
 			};
@@ -34,7 +35,7 @@ public class App3 {
 			
 			personnel.put(vehicle, driverSet);
 		}
-		{ // Brackets just to scope driversList variable so can use again later
+		{ // Brackets just to scope driversList variable that can use again later
 		// Example usage
 		System.out.println("Example usage:");
 		Set<String> driversList = personnel.get("helicopter");

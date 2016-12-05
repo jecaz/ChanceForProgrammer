@@ -31,9 +31,8 @@ public class App2 {
 		for(String animal : animals){
 			System.out.println(animal);
 			
-			// If you want to remove item from the list you must use Iterator. Otherwise,
-			// this code will cause run-time error;
-			// animals.remove();
+			// If you want to remove item from the list you must use Iterator. 
+			// Otherwise, this code will cause run-time error -> animals.remove();
 		}
 
 	}

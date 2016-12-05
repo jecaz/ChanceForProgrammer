@@ -33,7 +33,7 @@ public class Stuffs {
 		List<String> listCopy = Arrays.asList(newRay);
 		
 		// copy contents of theList into listCopy
-		System.out.println("Copy contents of theList into listCopy");
+		System.out.println("Copy content of theList into listCopy");
 		Collections.copy(listCopy, theList);
 		System.out.printf("%s\n\n", listCopy);
 		

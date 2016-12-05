@@ -55,7 +55,7 @@ class SomePerson implements Comparable<SomePerson>{
 		} else if(len1 < len2){
 			return -1;
 		} 
-		// This execute only if two names have equal length. In that case, 
+		// This will be executed only if two names have equal length. In that case, 
 		// because of Set, we have to do some more comparing 
 		else {
 			return name.compareTo(person.name);
