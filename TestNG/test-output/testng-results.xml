@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Coffee test Suite" duration-ms="147" started-at="2016-12-07T13:26:16Z" finished-at="2016-12-07T13:26:16Z">
+    <groups>
+    </groups>
+    <test name="Coffee test" duration-ms="147" started-at="2016-12-07T13:26:16Z" finished-at="2016-12-07T13:26:16Z">
+      <class name="test_coffee.CafeTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:test_coffee.CafeTest@50c87b21]" name="before" is-config="true" duration-ms="0" started-at="2016-12-07T14:26:16Z" finished-at="2016-12-07T14:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="brewingEspressoConsumesBeans()[pri:0, instance:test_coffee.CafeTest@50c87b21]" name="brewingEspressoConsumesBeans" duration-ms="0" started-at="2016-12-07T14:26:16Z" finished-at="2016-12-07T14:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brewingEspressoConsumesBeans -->
+        <test-method status="PASS" signature="canBrewEspresso()[pri:0, instance:test_coffee.CafeTest@50c87b21]" name="canBrewEspresso" duration-ms="0" started-at="2016-12-07T14:26:16Z" finished-at="2016-12-07T14:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canBrewEspresso -->
+        <test-method status="PASS" signature="canBrewLatte()[pri:0, instance:test_coffee.CafeTest@50c87b21]" name="canBrewLatte" duration-ms="0" started-at="2016-12-07T14:26:16Z" finished-at="2016-12-07T14:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canBrewLatte -->
+        <test-method status="PASS" signature="lattesRequiresMilk()[pri:0, instance:test_coffee.CafeTest@50c87b21]" name="lattesRequiresMilk" duration-ms="2" started-at="2016-12-07T14:26:16Z" finished-at="2016-12-07T14:26:16Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Insufficient beans or milk.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Insufficient beans or milk.
+	at coffee.Cafe.brew(Cafe.java:18)
+	at coffee.Cafe.brew(Cafe.java:10)
+	at test_coffee.CafeTest.lattesRequiresMilk(CafeTest.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lattesRequiresMilk -->
+        <test-method status="PASS" signature="mustRestockBeans()[pri:0, instance:test_coffee.CafeTest@50c87b21]" name="mustRestockBeans" duration-ms="16" started-at="2016-12-07T14:26:16Z" finished-at="2016-12-07T14:26:16Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException
+	at coffee.Cafe.requirePositive(Cafe.java:41)
+	at coffee.Cafe.restockBeans(Cafe.java:31)
+	at test_coffee.CafeTest.mustRestockBeans(CafeTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mustRestockBeans -->
+        <test-method status="PASS" signature="mustRestockMilk()[pri:0, instance:test_coffee.CafeTest@50c87b21]" name="mustRestockMilk" duration-ms="15" started-at="2016-12-07T14:26:16Z" finished-at="2016-12-07T14:26:16Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException
+	at coffee.Cafe.requirePositive(Cafe.java:41)
+	at coffee.Cafe.restockMilk(Cafe.java:35)
+	at test_coffee.CafeTest.mustRestockMilk(CafeTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mustRestockMilk -->
+      </class> <!-- test_coffee.CafeTest -->
+    </test> <!-- Coffee test -->
+  </suite> <!-- Coffee test Suite -->
+</testng-results>

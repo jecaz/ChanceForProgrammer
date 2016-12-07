@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data Provider test Suite]">
+  <test name="Data Provider with Bean test(failed)">
+    <classes>
+      <class name="parameterized_test.ParamTestWithDataProviderWithBean">
+        <methods>
+          <include name="testMethod" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- parameterized_test.ParamTestWithDataProviderWithBean -->
+    </classes>
+  </test> <!-- Data Provider with Bean test(failed) -->
+</suite> <!-- Failed suite [Data Provider test Suite] -->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Coffee test Suite">
+  <test name="Coffee test">
+ 	<classes>
+ 		<class name="test_coffee.CafeTest"/>
+ 	</classes>
+  </test>
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MessageSuite1">
+	<test name="exampleMessageTest1">
+	   <classes>
+			<class name="message_test.MessageTest1" />
+	   </classes>
+	</test>
+		<test name="exampleMessageTest2">
+    <classes>
+		<class name="message_test.MessageTest2" />
+    </classes>
+  </test>
+</suite>

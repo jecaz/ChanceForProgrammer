@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MessageSuite1]">
+  <test name="exampleMessageTest2(failed)">
+    <classes>
+      <class name="message_test.MessageTest2">
+        <methods>
+          <include name="initEnvironmentTest"/>
+          <include name="testSalutationMessage"/>
+        </methods>
+      </class> <!-- message_test.MessageTest2 -->
+    </classes>
+  </test> <!-- exampleMessageTest2(failed) -->
+</suite> <!-- Failed suite [MessageSuite1] -->
