@@ -5,40 +5,40 @@ package exercise3;
 public class ArithmeticDemo {
 
 	public static void main(String[] args) {
-		/*
+		
 		int result = 1+2;
-		System.out.println(result);
+		System.out.print(result + "\t");
 		
 		result = result - 1;
-		System.out.println(result);
+		System.out.print(result + "\t");
 		
 		result = result * 2;
-		System.out.println(result);
+		System.out.print(result + "\t");
 		
 		result = result / 2;
-		System.out.println(result);
+		System.out.print(result + "\t");
 		
 		result = result + 8;
 		result = result % 7;
-		System.out.println(result);
-		*/
-		System.out.println(" After using compound assignments the result is same:\n");
+		System.out.print(result + "\t\n\n");
 		
-		int result = 3;
-		System.out.print(result + "\t");
+		System.out.println("After using compound assignments the result is same:\n");
 		
-		result -= 1;
-		System.out.print(result + "\t");
+		int result1 = 3;
+		System.out.print(result1 + "\t");
 		
-		result *= 2;
-		System.out.print(result + "\t");
+		result1 -= 1;
+		System.out.print(result1 + "\t");
 		
-		result /= 2;
-		System.out.print(result + "\t");
+		result1 *= 2;
+		System.out.print(result1 + "\t");
 		
-		result += 8;
-		result %= 7;
-		System.out.print(result + "\t");
+		result1 /= 2;
+		System.out.print(result1 + "\t");
+		
+		result1 += 8;
+		result1 %= 7;
+		System.out.print(result1 + "\t");
 		
 	}
 }
