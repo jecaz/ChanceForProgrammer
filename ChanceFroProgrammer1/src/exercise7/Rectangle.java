@@ -6,8 +6,12 @@ public class Rectangle {
 	int width;
 	int height;
 	 
-	public Rectangle(int width, int height){
+	public Rectangle (int width){
 		this.width = width;
+	}
+	
+	public Rectangle(int width, int height){
+		this(width); // invoke first constructor
 		this.height = height;
 		System.out.println("myRect's area initialy in constructor is " 
 							+ findArea());
