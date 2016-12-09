@@ -3,6 +3,9 @@ package exercise9;
 import java.util.Iterator;
 import java.util.function.Function;
 
+// This class prints out even or odd numbers using Iterator interface, anonymous class,
+// lambda expressions and method references
+
 public class DataStructure {
 
     private final static int SIZE = 15; // variable which is used to set size of an array 
