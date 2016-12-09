@@ -18,14 +18,14 @@ public class ControlFlowStatements {
 		System.out.println("third string");
 		
 		/* a. What output do you think the code will produce if aNumber is 3?
-		  
+		-----------------------------------------------------------------------  
 		   Answer:
 		   
 		 * 		second string
 		 * 		third string
 		 
 		   b. Explain what is the control flow for the code snippet?
-		   
+		  ----------------------------------------------------------- 
 		   Answer:
 		 
 		 * 		First if condition is true (3 >= 0) and second one isn't, so else 
@@ -35,7 +35,7 @@ public class ControlFlowStatements {
 		 
 		   c. Using only spaces and line breaks, reformat the code snippet to make 
 		   the control flow easier to understand.
-		   
+		   -------------------------------------------------------------------------
 		   Answer:
 		   
 		 * if(aNumber >= 0)
@@ -47,7 +47,7 @@ public class ControlFlowStatements {
 			System.out.println("third string");
 			
 			d. Use braces {} to further clarify the code.
-			
+			----------------------------------------------
 			Answer:
 			
 			if(aNumber >= 0){
