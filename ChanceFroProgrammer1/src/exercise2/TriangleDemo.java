@@ -25,7 +25,7 @@ public class TriangleDemo {
 		// Use of findArea method
 		t1.findArea(6,10);
 		
-		// Checking if t1 object is instance of Triangle class
+		// Checking if t1 object is instance of Triangle and Object class
 		System.out.println("t1 is instance of Triangle and Object class: " + (t1 instanceof Triangle) 
 							+ " and " + (t1 instanceof Object));
 
