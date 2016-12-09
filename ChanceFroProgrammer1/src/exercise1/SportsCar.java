@@ -32,9 +32,9 @@ public class SportsCar extends Vehicle implements VehicleBehavior {
 		this.mark = mark;
 	}
 
-	/*Error message if I miss one method defined by interface i.e. markIs(String name): 
+	/*Error message if I miss one method defined by interface i.e. fuelneeded(int miles): 
 	 * Type Sportscar must implement the inherited abstract method
-	 * VehicleBehavior.markIs(String name).
+	 * VehicleBehavior.fuelneeded(int miles).
 	 */
 	
 	@Override
