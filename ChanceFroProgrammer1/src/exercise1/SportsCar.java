@@ -45,9 +45,4 @@ public class SportsCar extends Vehicle implements VehicleBehavior {
 	public double fuelneeded(int miles){
 		return (double) miles / getMpg();
 	};
-	// Method which return a name of mark
-	public String markIs(String name){
-		mark = name;
-		return mark;
-	}
 }
