@@ -1,7 +1,7 @@
 package exercise2;
 
 /* Goal of this exercise is to define some fields, illegal field names. 
- * Try leaving fields and local variable uninitialized and prints out their values. 
+ * Try leaving fields and local variable uninitialized and print out their values. 
  */
 
 public class Triangle {
