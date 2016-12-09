@@ -44,5 +44,5 @@ public class SportsCar extends Vehicle implements VehicleBehavior {
 	@Override
 	public double fuelneeded(int miles){
 		return (double) miles / getMpg();
-	};
+	}
 }
