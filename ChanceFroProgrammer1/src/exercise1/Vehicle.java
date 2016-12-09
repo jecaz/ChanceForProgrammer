@@ -41,11 +41,11 @@ public class Vehicle {
 	}
 
 	// This method computes range of the vehicle
-	int range(){
+	public int range(){
 		return fuelcap * mpg;
 	}
 	// This method computes how much fuel is needed depending on miles
-	double fuelneeded(int miles){
+	public double fuelneeded(int miles){
 		return (double) miles / mpg;
 	}
 
