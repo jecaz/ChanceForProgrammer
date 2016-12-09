@@ -9,7 +9,7 @@ public class TriangleDemo {
 		Triangle t1 = new Triangle();
 		Triangle t2 = new Triangle();
 		
-		// Use static variable and some methods from Object class(parent class from every classes)
+		// Use static variable and some methods from Object class(parent class from every class)
 		System.out.println("There is " + Triangle.numOfTriangle + " objects of type "
 				+ t1.getClass().getSimpleName());
 		
@@ -26,7 +26,8 @@ public class TriangleDemo {
 		t1.findArea(6,10);
 		
 		// Checking if t1 object is instance of Triangle class
-		System.out.println("t1 is insance of Triangle: " + (t1 instanceof Triangle));
+		System.out.println("t1 is instance of Triangle and Object class: " + (t1 instanceof Triangle) 
+							+ " and " + (t1 instanceof Object));
 
 	}
 
