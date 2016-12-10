@@ -60,7 +60,6 @@ public class CharSequenceDemo implements CharSequence {
 		CharSequenceDemo s =
 				new CharSequenceDemo("Write a class that implements the CharSequence " 
 									+"interface found in the java.lang package.");
-   	System.out.println(s.length());
 		
    //exercise charAt() and length()
    for (int i = 0; i < s.length(); i++) {
@@ -71,7 +70,6 @@ public class CharSequenceDemo implements CharSequence {
 
    //exercise subSequence() and length();
    int start = random(s.length() - 1);
-   System.out.println(start);
    int end = random(s.length() - 1 - start) + start;
    System.out.println(s.subSequence(start, end));
 
