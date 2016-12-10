@@ -18,7 +18,8 @@ public class FoodDemo {
 			food[i].eat();
 		}
 		System.out.println();
-		System.out.println("Invoke digest method: ");
+		// Invoke digest method
+		System.out.println("Piter said that all food was great.");
 		for(int i = 0; i < food.length; i++){
 			p.digest(food[i]);
 		}
