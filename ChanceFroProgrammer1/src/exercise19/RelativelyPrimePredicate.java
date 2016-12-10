@@ -3,6 +3,8 @@ package exercise19;
 import java.util.Collection;
 
 public class RelativelyPrimePredicate implements UnaryPredicate<Integer> {
+	
+	private Collection<Integer> c;
     
 	public RelativelyPrimePredicate(Collection<Integer> c) {
         this.c = c;
@@ -16,5 +18,4 @@ public class RelativelyPrimePredicate implements UnaryPredicate<Integer> {
         return c.size() > 0;
     }
 
-    private Collection<Integer> c;
 }
