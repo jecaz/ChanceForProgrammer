@@ -1,5 +1,7 @@
 package polymorphism;
 
+// Person Piter digests some food
+
 public class Piter {
 	
 	// polymorphic arguments
