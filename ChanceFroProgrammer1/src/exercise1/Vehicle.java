@@ -2,7 +2,7 @@ package exercise1;
 
 //Create new classes for each real-world object
 
-public class Vehicle {
+public class Vehicle implements VehicleBehavior{
 	
 	private int passengers;		// number of passengers
 	private int fuelcap;		// fuel capacity in gallons
@@ -40,11 +40,15 @@ public class Vehicle {
 		this.mpg = mpg;
 	}
 
-	// This method computes range of the vehicle
+	// This method supplies implementation of method from interface VehicleBehavior
+	// and computes range of the vehicle
+	@Override
 	public int range(){
 		return fuelcap * mpg;
 	}
-	// This method computes how much fuel is needed depending on miles
+	// This method supplies implementation of method from interface VehicleBehavior
+	// and computes how much fuel is needed depending on miles
+	@Override
 	public double fuelneeded(int miles){
 		return (double) miles / mpg;
 	}
