@@ -30,11 +30,6 @@ public class SportsCar extends Vehicle {
 	public void setMark(String mark) {
 		this.mark = mark;
 	}
-
-	/*Error message if I miss one method defined by interface i.e. fuelneeded(int miles): 
-	 * Type Sportscar must implement the inherited abstract method
-	 * VehicleBehavior.fuelneeded(int miles).
-	 */
 	
 	@Override
 	public int range(){

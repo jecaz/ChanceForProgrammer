@@ -46,6 +46,12 @@ public class Vehicle implements VehicleBehavior{
 	public int range(){
 		return fuelcap * mpg;
 	}
+	
+	/*Error message if I miss one method defined by interface i.e. fuelneeded(int miles): 
+	 * Type Vehicle must implement the inherited abstract method
+	 * VehicleBehavior.fuelneeded(int miles).
+	 */
+	
 	// This method supplies implementation of method from interface VehicleBehavior
 	// and computes how much fuel is needed depending on miles
 	@Override
