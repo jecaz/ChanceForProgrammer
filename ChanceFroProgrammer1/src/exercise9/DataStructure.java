@@ -123,6 +123,25 @@ public class DataStructure {
             }
         );
         
+        System.out.println("print(DataStructureIterator) with "
+                + "anonymous class, even indices");
+        ds.print(new DataStructure.DataStructureIterator(){
+
+        	private int nextIndex = 0;
+        	
+			@Override
+			public boolean hasNext() {
+				return nextIndex <= SIZE - 1;
+			}
+
+			@Override
+			public Integer next() {
+				int retValue = ds.get(nextIndex);
+				nextIndex += 2;
+				return retValue;
+			}
+        });
+        
         System.out.println("print(Function) with lambda expressions, even indices");
         ds.print(index -> {
             if (index % 2 == 0) return Boolean.TRUE;
@@ -130,8 +149,8 @@ public class DataStructure {
         });
         System.out.println("print(Function) with lambda expressions, odd indices");
         ds.print(index -> {
-            if (index % 2 == 0) return Boolean.FALSE;
-            return Boolean.TRUE;
+            if (index % 2 != 0) return Boolean.TRUE;
+            return Boolean.FALSE;
         });
         
         System.out.println("print(Function) with method references");
